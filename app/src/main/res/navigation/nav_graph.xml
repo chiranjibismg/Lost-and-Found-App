@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    android:label="Found"
+    app:startDestination="@id/profile_fragment">
+    <fragment
+        android:id="@+id/lost_fragment"
+        android:name="com.bloodreaper.lostandfound.main.lost.LostFragment"
+        android:label="Lost"
+        tools:layout="@layout/fragment_lost" >
+        <action
+            android:id="@+id/action_lost_fragment_to_postForLostItemFragment"
+            app:destination="@id/postForLostItemFragment"
+            app:enterAnim="@anim/slide_in_top"
+            app:exitAnim="@anim/slide_out_bottom"
+            app:popEnterAnim="@anim/slide_in_bottom"
+            app:popExitAnim="@anim/slide_out_top" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile_fragment"
+        android:name="com.bloodreaper.lostandfound.main.MyPostsFragment"
+        android:label="My Posts"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/found_fragment"
+        android:name="com.bloodreaper.lostandfound.main.found.FoundFragment"
+        android:label="Found"
+        tools:layout="@layout/fragment_found" >
+        <action
+            android:id="@+id/action_found_fragment_to_postForFoundItemFragment"
+            app:destination="@id/postForFoundItemFragment"
+            app:enterAnim="@anim/slide_in_top"
+            app:exitAnim="@anim/slide_out_bottom"
+            app:popEnterAnim="@anim/slide_in_bottom"
+            app:popExitAnim="@anim/slide_out_top" />
+    </fragment>
+    <fragment
+        android:id="@+id/postForLostItemFragment"
+        android:name="com.bloodreaper.lostandfound.main.lost.PostForLostItemFragment"
+        android:label="Report a lost item"
+        tools:layout="@layout/fragment_post_for_lost_item" >
+        <action
+            android:id="@+id/action_postForLostItemFragment_to_lost_fragment"
+            app:destination="@id/lost_fragment"
+            app:enterAnim="@anim/slide_in_top"
+            app:exitAnim="@anim/slide_out_bottom"
+            app:popEnterAnim="@anim/slide_out_top"
+            app:popExitAnim="@anim/slide_in_bottom" />
+    </fragment>
+    <fragment
+        android:id="@+id/postForFoundItemFragment"
+        android:name="com.bloodreaper.lostandfound.main.found.PostForFoundItemFragment"
+        android:label="Report a found item"
+        tools:layout="@layout/fragment_post_for_found_item" >
+        <action
+            android:id="@+id/action_postForFoundItemFragment_to_found_fragment"
+            app:destination="@id/found_fragment"
+            app:enterAnim="@anim/slide_in_top"
+            app:exitAnim="@anim/slide_out_bottom"
+            app:popEnterAnim="@anim/slide_out_top"
+            app:popExitAnim="@anim/slide_in_bottom" />
+    </fragment>
+</navigation>

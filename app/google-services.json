@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "910182298559",
+    "project_id": "lostandfound-6036c",
+    "storage_bucket": "lostandfound-6036c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:910182298559:android:f2a329243f25842908e70a",
+        "android_client_info": {
+          "package_name": "com.bloodreaper.lostandfound"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "910182298559-1rtdf79vl78uqjjbo7boctb1hrn5q9e5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUlrvSI6CBLD7btutvLORth_uvn5W7ATQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "910182298559-1rtdf79vl78uqjjbo7boctb1hrn5q9e5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
